@@ -12,7 +12,6 @@ use Bencher::ScenarioUtil::Completion qw(make_completion_participant);
 our $scenario = {
     summary => 'Benchmark completion response time, to monitor regression',
     modules => {
-        'App::lcpan' => 0,
     },
     participants => [
         make_completion_participant(
